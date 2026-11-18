@@ -2,7 +2,16 @@
 'use strict';
 const products=window.ACCESSORIES||[];
 const models=['XRF','Cobra Series','Hydra Gen2','VertiGo','XT','Hydra Gen1'];
-const machineImages=Object.fromEntries(models.map((m,i)=>[m,`assets/accessories-images/machine-${i+1}.png`]));
+// Curated, repository-hosted brand-library originals. Sources: assets/machines/SOURCES.md.
+const machineImages={
+ 'XRF':'assets/machines/xrf-front.jpg',
+ 'Cobra Series':'assets/machines/cobra-front.jpg',
+ 'Hydra Gen2':'assets/machines/hydra-gen2-front.png',
+ 'VertiGo':'assets/machines/vertigo-front.png',
+ // XT stays on its existing local front image until a library original is supplied.
+ 'XT':'assets/accessories-images/machine-5.png',
+ 'Hydra Gen1':'assets/machines/hydra-gen1-front.png'
+};
 const categoryIcons=['<circle cx="12" cy="12" r="7"/><path d="M8 3H4v4m0-4 4 4m8 14h4v-4m0 4-4-4"/>','<path d="M3 7h12a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 17h7"/>','<path d="M3 7h18v10H3zM7 10h10M7 14h10M7 3v4m10-4v4M7 17v4m10-4v4"/>','<path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h8M8 18h8"/>','<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3"/>'];
 const icon=i=>`<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${categoryIcons[i]}</svg>`;
 const types=['Rotary attachments','Cooling & air assist','Risers & feeders','Filtration & filters','Optics & laser tubes'];
@@ -17,7 +26,7 @@ function filtered(ignoreCategory=false){return products.filter(p=>(!state.machin
 function render(){
  $('#catalog-title').textContent=state.machine?'Accessories for '+state.machine:'All OneLaser accessories';
  $('#search').value=state.q;$('#sort').value=state.sort;$('#machine-select').value=state.machine;$('#max-price').value=state.max;
- $('#machines').innerHTML=models.map(m=>`<button class="machine" data-machine="${escape(m)}" aria-pressed="${state.machine===m}"><img class="machine-photo" src="${machineImages[m]}" width="88" height="64" alt=""><span class="machine-copy"><strong>${escape(m)}</strong><small>${products.filter(p=>!m||p.machines.includes(m)).length} accessories</small></span></button>`).join('');
+ $('#machines').innerHTML=models.map(m=>`<button class="machine" data-machine="${escape(m)}" aria-pressed="${state.machine===m}"><span class="machine-visual" aria-hidden="true"><img class="machine-photo" src="${machineImages[m]}" width="94" height="64" alt="" decoding="async"></span><span class="machine-copy"><strong>${escape(m)}</strong><small>${products.filter(p=>!m||p.machines.includes(m)).length} accessories</small></span></button>`).join('');
  $('#categories').innerHTML=types.map(c=>`<label><input type="checkbox" value="${escape(c)}" ${state.categories.includes(c)?'checked':''}>${escape(c)}<small>${filtered(true).filter(p=>p.category===c).length}</small></label>`).join('');
  let list=filtered();if(state.sort==='price-asc')list.sort((a,b)=>a.price-b.price);if(state.sort==='price-desc')list.sort((a,b)=>b.price-a.price);if(state.sort==='name')list.sort((a,b)=>a.title.localeCompare(b.title));
  $('#count').textContent=`${list.length} ${list.length===1?'accessory':'accessories'}${state.machine?' for '+state.machine:''}`;
