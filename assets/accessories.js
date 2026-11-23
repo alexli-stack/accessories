@@ -24,9 +24,11 @@ function read(){const p=new URLSearchParams(location.search);state={machine:mode
 function sync(){const p=new URLSearchParams();if(state.machine)p.set('machine',state.machine);state.categories.forEach(c=>p.append('category',c));if(state.q)p.set('q',state.q);if(state.sort!=='featured')p.set('sort',state.sort);if(state.max!=='')p.set('max',state.max);history.replaceState(null,'',location.pathname+(p.size?'?'+p:'')+location.hash);}
 function filtered(ignoreCategory=false){return products.filter(p=>(!state.machine||p.machines.includes(state.machine))&&(ignoreCategory||!state.categories.length||state.categories.includes(p.category))&&(!state.q||[p.title,p.description,p.note,p.category,...p.machines].join(' ').toLowerCase().includes(state.q.toLowerCase()))&&(state.max===''||p.price<=Number(state.max)));}
 function render(){
+ const machineScroll=$('#machines').scrollLeft;
  $('#catalog-title').textContent=state.machine?'Accessories for '+state.machine:'All OneLaser accessories';
  $('#search').value=state.q;$('#sort').value=state.sort;$('#machine-select').value=state.machine;$('#max-price').value=state.max;
  $('#machines').innerHTML=models.map(m=>`<button class="machine" data-machine="${escape(m)}" aria-pressed="${state.machine===m}"><span class="machine-visual" aria-hidden="true"><img class="machine-photo" src="${machineImages[m]}" width="94" height="64" alt="" decoding="async"></span><span class="machine-copy"><strong>${escape(m)}</strong><small>${products.filter(p=>!m||p.machines.includes(m)).length} accessories</small></span></button>`).join('');
+ $('#machines').scrollLeft=machineScroll;requestAnimationFrame(updateMachineScroll);
  $('#categories').innerHTML=types.map(c=>`<label><input type="checkbox" value="${escape(c)}" ${state.categories.includes(c)?'checked':''}>${escape(c)}<small>${filtered(true).filter(p=>p.category===c).length}</small></label>`).join('');
  let list=filtered();if(state.sort==='price-asc')list.sort((a,b)=>a.price-b.price);if(state.sort==='price-desc')list.sort((a,b)=>b.price-a.price);if(state.sort==='name')list.sort((a,b)=>a.title.localeCompare(b.title));
  $('#count').textContent=`${list.length} ${list.length===1?'accessory':'accessories'}${state.machine?' for '+state.machine:''}`;
@@ -48,6 +50,11 @@ function reset(){state={machine:state.machine,categories:[],q:'',sort:'featured'
 read();$('#machine-select').insertAdjacentHTML('beforeend',models.map(m=>`<option>${escape(m)}</option>`).join(''));
 
 render();
+function updateMachineScroll(){const row=$('#machines');$('#machines-prev').disabled=row.scrollLeft<=3;$('#machines-next').disabled=row.scrollLeft+row.clientWidth>=row.scrollWidth-2;}
+$('#machines-prev').addEventListener('click',()=>$('#machines').scrollBy({left:-246,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
+$('#machines-next').addEventListener('click',()=>$('#machines').scrollBy({left:246,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
+$('#machines').addEventListener('scroll',updateMachineScroll,{passive:true});
+new ResizeObserver(updateMachineScroll).observe($('#machines'));
 document.addEventListener('click',e=>{
  const config=e.target.closest('[data-configure]');if(config){const p=products[Number(config.dataset.configure)];$('#variant-product').textContent=p.title;$('#variant-note').textContent=p.note;$('#variant-learn').href=p.url;$('#variant-select').innerHTML='<option value="">Select a configuration</option>'+p.variants.map(v=>`<option value="${escape(v.id)}" data-price="${v.price}" ${v.available?'':'disabled'}>${escape(v.title)} — ${money(v.price)}${v.available?'':' — Unavailable'}</option>`).join('');$('#variant-price').textContent='';$('#cart-quantity').value='1';$('#variant-form button[type=submit]').disabled=false;$('#variant-dialog').showModal();}
 const m=e.target.closest('[data-machine]');if(m){state.machine=m.dataset.machine;state.categories=[];state.q='';state.max='';update();$('#catalog').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}const g=e.target.closest('[data-goal]');if(g){e.preventDefault();state.categories=[g.dataset.goal];update();$('#catalog').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}if(e.target.closest('[data-reset]'))reset();const chip=e.target.closest('[data-remove]');if(chip){if(chip.dataset.remove==='category')state.categories=state.categories.filter(c=>c!==chip.dataset.value);else state[chip.dataset.remove]='';update();}});

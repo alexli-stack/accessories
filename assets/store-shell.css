@@ -1,0 +1,9 @@
+/* Keep the official shared navigation and booking behavior, with Store typography. */
+@import url('fonts/poppins.css');
+:root{--font-body-family:Poppins,Roboto,system-ui,'Segoe UI',sans-serif;--font-heading-family:Poppins,Roboto,system-ui,'Segoe UI',sans-serif;--font-body-weight:400;--font-heading-weight:600}
+body,input,select,button,.header__menu-item,.menu-drawer__menu-item,.custom-accordion-toggle,.footer-block__heading,.footer-block__details-content,.ol-header-contact__book{font-family:Poppins,Roboto,system-ui,'Segoe UI',sans-serif!important;letter-spacing:0}
+.header__menu-item{font-size:14px;font-weight:400!important}.header__menu-item span{font-weight:400!important}
+.ol-header-contact__book{font-size:13px!important;font-weight:600!important;border-radius:999px!important;box-shadow:none!important}
+.ol-header-contact__phone{font-size:14px!important;font-weight:400!important}
+.footer-block__heading{font-weight:600}
+a:focus-visible,button:focus-visible{outline:2px solid #0b7fc0;outline-offset:3px}
