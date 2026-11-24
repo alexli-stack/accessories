@@ -1,9 +1,14 @@
-/* Keep the official shared navigation and booking behavior, with Store typography. */
-@import url('fonts/poppins.css');
-:root{--font-body-family:Poppins,Roboto,system-ui,'Segoe UI',sans-serif;--font-heading-family:Poppins,Roboto,system-ui,'Segoe UI',sans-serif;--font-body-weight:400;--font-heading-weight:600}
-body,input,select,button,.header__menu-item,.menu-drawer__menu-item,.custom-accordion-toggle,.footer-block__heading,.footer-block__details-content,.ol-header-contact__book{font-family:Poppins,Roboto,system-ui,'Segoe UI',sans-serif!important;letter-spacing:0}
-.header__menu-item{font-size:14px;font-weight:400!important}.header__menu-item span{font-weight:400!important}
-.ol-header-contact__book{font-size:13px!important;font-weight:600!important;border-radius:999px!important;box-shadow:none!important}
-.ol-header-contact__phone{font-size:14px!important;font-weight:400!important}
-.footer-block__heading{font-weight:600}
+/* Typography measured from the live 1laser.com header/footer, 2026-11-24. */
+@import url('fonts/certia.css');
+:root{--font-body-family:Certia,sans-serif;--font-heading-family:Certia-ExtraBold,Certia,sans-serif;--font-body-weight:400;--font-heading-weight:700}
+body,input,select,button{font-family:Certia,sans-serif!important;letter-spacing:.6px}
+body{font-size:16px;line-height:1.8}
+h1,h2,h3,h4,.h1,.h2,.h3,.footer-block__heading,.custom-accordion-toggle{font-family:Certia-ExtraBold,Certia,sans-serif!important}
+.header__menu-item,.header__menu-item span{font-family:Certia-Medium,Certia,sans-serif!important;font-size:14px;font-weight:600!important;line-height:1.3;letter-spacing:.6px}
+.menu-drawer__menu-item{font-family:Certia,sans-serif!important}
+.footer-block__heading{font-size:14px;font-weight:700;line-height:1.3;letter-spacing:.6px}
+.footer-block__details-content{font-family:Certia,sans-serif!important;font-size:16px;line-height:1.8;letter-spacing:.6px}
+.ol-header-contact__book,.ol-header-contact__phone{font-family:Certia,sans-serif!important;font-size:14px!important;font-weight:700!important;line-height:20px;letter-spacing:normal}
+.ol-header-contact__book{border-radius:999px!important;box-shadow:none!important}
 a:focus-visible,button:focus-visible{outline:2px solid #0b7fc0;outline-offset:3px}
+@media(max-width:650px){body,.footer-block__details-content{font-size:15px}.ol-header-contact__book{font-size:13px!important}}

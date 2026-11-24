@@ -1,0 +1,5 @@
+/* Original OneLaser font files, verified against 1laser.com on 2026-11-24. */
+@font-face{font-family:Certia;src:url('../certia-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Certia-Medium;src:url('../certia-medium.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Certia-Bold;src:url('../certia-bold.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Certia-ExtraBold;src:url('../certia-extrabold.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}

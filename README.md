@@ -12,12 +12,14 @@ This publishes the preview only; it does not change the Shopify live theme.
 
 ## Visual system
 
-The accessories collection follows [OneLaser Store](https://alexli-stack.github.io/store/).
-`assets/accessories-store.css` defines the active collection theme: Poppins typography,
-brand red `#e7310e` for prices and primary actions, sky blue `#38bdf8` for selection
-and assistance, and neutral gray product surfaces. The shared header and footer
-keep their existing links and interactions, with typography in `assets/store-shell.css`.
-Poppins fonts are hosted locally in `assets/fonts/`, with their OFL license.
+The collection layout and colors follow [OneLaser Store](https://alexli-stack.github.io/store/).
+Typography follows the current [1laser.com accessories page](https://www.1laser.com/collections/laser-accessories),
+measured on November 24, 2026. `assets/accessories-typography.css` defines Certia body text,
+Certia-ExtraBold headings, 24px prices, 13px product actions, and responsive title sizes.
+The two-column mobile product cards use a compact 16px title; the live site's wider mobile card uses 20px.
+`assets/accessories-store.css` defines the layout and colors; `assets/store-shell.css` applies
+the official typography to the existing shared header and footer. Fonts are hosted locally.
+Measurement sources and responsive adaptations are recorded in `docs/typography-reference.json`.
 Machine image provenance is recorded in `assets/machines/SOURCES.md`.
 
 ## Enable GitHub Pages

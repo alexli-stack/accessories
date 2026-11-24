@@ -1,0 +1,426 @@
+{
+  "checked_on": "2026-11-24",
+  "method": "Browser computed styles after document.fonts.ready at 1440px and 390px",
+  "sources": [
+    "https://www.1laser.com/",
+    "https://www.1laser.com/collections/laser-accessories"
+  ],
+  "font_files_verified": "Local Certia Regular, Medium, Bold and ExtraBold files match current official font file bytes.",
+  "measurements": [
+    {
+      "width": 1440,
+      "styles": [
+        {
+          "selector": "body",
+          "text": "false Skip to content .drawer { visibility: hidden; } Y",
+          "font": "Certia, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "line": "28.8px",
+          "spacing": "0.6px",
+          "color": "rgba(51, 51, 51, 0.75)"
+        },
+        {
+          "selector": "h1",
+          "text": "Shop Laser Accessories by Machine",
+          "font": "Certia-ExtraBold",
+          "size": "36px",
+          "weight": "700",
+          "line": "41.4px",
+          "spacing": "-1.44px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".s-machine__heading",
+          "text": "Shop Laser Accessories by Machine",
+          "font": "Certia-ExtraBold",
+          "size": "36px",
+          "weight": "700",
+          "line": "41.4px",
+          "spacing": "-1.44px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".s-machine__card-title",
+          "text": "Hydra Gen2",
+          "font": "Certia-ExtraBold",
+          "size": "16px",
+          "weight": "900",
+          "line": "20.8px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".accessory_card__heading",
+          "text": "OneLaser Chiller For Hydra & Cobra Glass Tube Laser Sys",
+          "font": "Certia-ExtraBold",
+          "size": "18px",
+          "weight": "800",
+          "line": "22.5px",
+          "spacing": "-0.45px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "selector": ".card-best-for__desc",
+          "text": "1400W cooling capacity with intelligent temperature con",
+          "font": "Certia, sans-serif",
+          "size": "12px",
+          "weight": "800",
+          "line": "17.04px",
+          "spacing": "0.6px",
+          "color": "rgb(85, 85, 90)"
+        },
+        {
+          "selector": ".current",
+          "text": "$699.00",
+          "font": "Certia-ExtraBold",
+          "size": "24px",
+          "weight": "800",
+          "line": "24px",
+          "spacing": "0.6px",
+          "color": "rgb(217, 45, 13)"
+        },
+        {
+          "selector": ".pfc-currency",
+          "text": "USD",
+          "font": "Certia, sans-serif",
+          "size": "12px",
+          "weight": "400",
+          "line": "16.8px",
+          "spacing": "0.6px",
+          "color": "rgb(134, 134, 139)"
+        },
+        {
+          "selector": ".accessory-card__add",
+          "text": "Add to Cart Sold out",
+          "font": "Certia, sans-serif",
+          "size": "13px",
+          "weight": "800",
+          "line": "15.6px",
+          "spacing": "normal",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "selector": ".pfc-btn-explore",
+          "text": "View details",
+          "font": "Certia-ExtraBold",
+          "size": "13px",
+          "weight": "800",
+          "line": "15.6px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".facets__summary-label",
+          "text": "Accessories type (0)",
+          "font": "Certia-ExtraBold",
+          "size": "14px",
+          "weight": "400",
+          "line": "21px",
+          "spacing": "0.4px",
+          "color": "rgba(9, 9, 9, 0.75)"
+        },
+        {
+          "selector": ".facet-checkbox__text-label",
+          "text": "Rotary attachments",
+          "font": "Certia, sans-serif",
+          "size": "12px",
+          "weight": "700",
+          "line": "15.6px",
+          "spacing": "0.6px",
+          "color": "rgb(85, 85, 90)"
+        },
+        {
+          "selector": ".faq-title",
+          "text": "Frequently asked questions.",
+          "font": "Certia-ExtraBold",
+          "size": "48px",
+          "weight": "700",
+          "line": "55.2px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".faq-question-heading",
+          "text": "What laser accessories do I need for a CO2 laser engrav",
+          "font": "Certia-ExtraBold",
+          "size": "18px",
+          "weight": "700",
+          "line": "23.4px",
+          "spacing": "0.6px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "selector": ".faq-answer p",
+          "text": "Start with three things. Air assist blows smoke and deb",
+          "font": "Certia, sans-serif",
+          "size": "14px",
+          "weight": "400",
+          "line": "22.4px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".ol-header-contact__book",
+          "text": "Talk to Sales Schedule a Sales Call Schedule a Call",
+          "font": "Certia, sans-serif",
+          "size": "14px",
+          "weight": "700",
+          "line": "20px",
+          "spacing": "normal",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "selector": ".ol-header-contact__phone",
+          "text": "626 800 4130",
+          "font": "Certia, sans-serif",
+          "size": "14px",
+          "weight": "700",
+          "line": "20px",
+          "spacing": "normal",
+          "color": "rgb(23, 23, 23)"
+        },
+        {
+          "selector": ".header__menu-item",
+          "text": "Laser Machines",
+          "font": "Certia-Medium",
+          "size": "14px",
+          "weight": "600",
+          "line": "18.2px",
+          "spacing": "0.6px",
+          "color": "rgb(27, 27, 29)"
+        },
+        {
+          "selector": ".footer-block__heading",
+          "text": "Community",
+          "font": "Certia-ExtraBold",
+          "size": "14px",
+          "weight": "700",
+          "line": "18.2px",
+          "spacing": "0.6px",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "selector": ".footer-block__details-content",
+          "text": "Purchase Rewards Become Affiliate Join Community Testim",
+          "font": "Certia, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "line": "28.8px",
+          "spacing": "0.6px",
+          "color": "rgba(255, 255, 255, 0.75)"
+        }
+      ],
+      "faces": [
+        "@font-face { font-family: Certia; src: url(\"/cdn/shop/files/Certia-Regular.woff2?v=1788146323\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-Bold; src: url(\"/cdn/shop/files/Certia-Bold.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-Black; src: url(\"/cdn/shop/files/Certia-Black.woff2?v=1788146323\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-Medium; src: url(\"/cdn/shop/files/Certia-Medium.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-SemiBold; src: url(\"/cdn/shop/files/Certia-SemiBold.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-ExtraBold; src: url(\"/cdn/shop/files/Certia-ExtraBold.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }"
+      ]
+    },
+    {
+      "width": 390,
+      "styles": [
+        {
+          "selector": "body",
+          "text": "false Skip to content .drawer { visibility: hidden; } Y",
+          "font": "Certia, sans-serif",
+          "size": "15px",
+          "weight": "400",
+          "line": "27px",
+          "spacing": "0.6px",
+          "color": "rgba(51, 51, 51, 0.75)"
+        },
+        {
+          "selector": "h1",
+          "text": "Shop Laser Accessories by Machine",
+          "font": "Certia-ExtraBold",
+          "size": "26px",
+          "weight": "700",
+          "line": "29.9px",
+          "spacing": "-1.04px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".s-machine__heading",
+          "text": "Shop Laser Accessories by Machine",
+          "font": "Certia-ExtraBold",
+          "size": "26px",
+          "weight": "700",
+          "line": "29.9px",
+          "spacing": "-1.04px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".s-machine__card-title",
+          "text": "Hydra Gen2",
+          "font": "Certia-ExtraBold",
+          "size": "14px",
+          "weight": "900",
+          "line": "18.2px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".accessory_card__heading",
+          "text": "OneLaser Chiller For Hydra & Cobra Glass Tube Laser Sys",
+          "font": "Certia-ExtraBold",
+          "size": "20px",
+          "weight": "800",
+          "line": "25px",
+          "spacing": "-0.5px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "selector": ".card-best-for__desc",
+          "text": "1400W cooling capacity with intelligent temperature con",
+          "font": "Certia, sans-serif",
+          "size": "12px",
+          "weight": "800",
+          "line": "17.04px",
+          "spacing": "0.6px",
+          "color": "rgb(85, 85, 90)"
+        },
+        {
+          "selector": ".current",
+          "text": "$699.00",
+          "font": "Certia-ExtraBold",
+          "size": "24px",
+          "weight": "800",
+          "line": "24px",
+          "spacing": "0.6px",
+          "color": "rgb(217, 45, 13)"
+        },
+        {
+          "selector": ".pfc-currency",
+          "text": "USD",
+          "font": "Certia, sans-serif",
+          "size": "12px",
+          "weight": "400",
+          "line": "16.8px",
+          "spacing": "0.6px",
+          "color": "rgb(134, 134, 139)"
+        },
+        {
+          "selector": ".accessory-card__add",
+          "text": "Add to Cart Sold out",
+          "font": "Certia, sans-serif",
+          "size": "13px",
+          "weight": "800",
+          "line": "15.6px",
+          "spacing": "normal",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "selector": ".pfc-btn-explore",
+          "text": "View details",
+          "font": "Certia-ExtraBold",
+          "size": "13px",
+          "weight": "800",
+          "line": "15.6px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".facet-checkbox__text-label",
+          "text": "Rotary attachments",
+          "font": "Certia, sans-serif",
+          "size": "15px",
+          "weight": "400",
+          "line": "19.5px",
+          "spacing": "0.6px",
+          "color": "rgba(9, 9, 9, 0.75)"
+        },
+        {
+          "selector": ".faq-title",
+          "text": "Frequently asked questions.",
+          "font": "Certia-ExtraBold",
+          "size": "32px",
+          "weight": "700",
+          "line": "36.8px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".faq-question-heading",
+          "text": "What laser accessories do I need for a CO2 laser engrav",
+          "font": "Certia-ExtraBold",
+          "size": "17px",
+          "weight": "700",
+          "line": "22.1px",
+          "spacing": "0.6px",
+          "color": "rgb(51, 51, 51)"
+        },
+        {
+          "selector": ".faq-answer p",
+          "text": "Start with three things. Air assist blows smoke and deb",
+          "font": "Certia, sans-serif",
+          "size": "14px",
+          "weight": "400",
+          "line": "22.4px",
+          "spacing": "0.6px",
+          "color": "rgb(0, 0, 0)"
+        },
+        {
+          "selector": ".ol-header-contact__book",
+          "text": "Talk to Sales Schedule a Sales Call Schedule a Call",
+          "font": "Certia, sans-serif",
+          "size": "13px",
+          "weight": "700",
+          "line": "20px",
+          "spacing": "normal",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "selector": ".footer-block__heading",
+          "text": "Community",
+          "font": "Certia-ExtraBold",
+          "size": "14px",
+          "weight": "700",
+          "line": "18.2px",
+          "spacing": "0.6px",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "selector": ".footer-block__details-content",
+          "text": "Purchase Rewards Become Affiliate Join Community Testim",
+          "font": "Certia, sans-serif",
+          "size": "15px",
+          "weight": "400",
+          "line": "27px",
+          "spacing": "0.6px",
+          "color": "rgba(255, 255, 255, 0.75)"
+        }
+      ],
+      "faces": [
+        "@font-face { font-family: Certia; src: url(\"/cdn/shop/files/Certia-Regular.woff2?v=1788146323\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-Bold; src: url(\"/cdn/shop/files/Certia-Bold.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-Black; src: url(\"/cdn/shop/files/Certia-Black.woff2?v=1788146323\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-Medium; src: url(\"/cdn/shop/files/Certia-Medium.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-SemiBold; src: url(\"/cdn/shop/files/Certia-SemiBold.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+        "@font-face { font-family: Certia-ExtraBold; src: url(\"/cdn/shop/files/Certia-ExtraBold.woff2?v=1788146324\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }"
+      ]
+    }
+  ],
+  "adaptations": [
+    {
+      "selector": ".product h3",
+      "mobile_font_size": "16px",
+      "reason": "Preserve the existing two-column mobile product layout; the official wider mobile accessory cards use 20px."
+    },
+    {
+      "selector": ".product-description",
+      "font_weight": 400,
+      "reason": "These are normal product descriptions; the official card-best-for text is an emphasized label."
+    },
+    {
+      "selector": ".help-card .booking-cta",
+      "font_size": "13px",
+      "height": "48px",
+      "white_space": "nowrap",
+      "reason": "Preserve the requested Schedule a call label on one line."
+    }
+  ]
+}
